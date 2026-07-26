@@ -1,0 +1,39 @@
+name: stock_chaussures
+description: Gestion de stock de chaussures - 100% hors ligne (Flutter + SQLite).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Base de données locale
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+  # Photos (appareil photo / galerie) + stockage des fichiers
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+
+  # Gestion d'état
+  provider: ^6.1.2
+
+  # Formatage des montants et des dates
+  # (version libre pour rester compatible avec flutter_localizations
+  #  quelle que soit la version de Flutter installée)
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
